@@ -1,0 +1,83 @@
+body {
+  font-family: 'Open sans';
+  color: rgb(30,30,30);
+  background-color: rgb(240,240,240);
+}
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
+  color: #3AC162;
+}
+a {
+  color: rgb(180,180,180);
+  text-decoration: none;
+}
+a:hover {
+  color: #3AC162;
+  text-decoration: none;
+}
+
+.box-white{
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+  margin: 30px ;
+  border-radius: 5px;
+  border: 1px solid rgb(220,220,220) ;
+}
+
+.box-white h3{
+  height: 52px;
+  overflow: hidden
+}
+
+.banner{
+  background-image: url("images/banner.jpeg");
+  background-size: cover;
+  padding: 200px 0;
+  text-align: center;
+}
+.banner > h1, h2{
+  text-shadow: 1px 1px 6px rgb(30,30,30);
+}
+.button-green{
+  background-color: #3AC162;
+  padding: 10px;
+  color: white;
+  border-radius: 2px;
+  border: none;
+}
+.button-green:hover{
+  background-color: #257a3d;
+  color: rgb(180,180,180);
+}
+
+#contact-box {
+  position: relative;
+  width: 500px;
+  margin: auto;
+}
+
+.top-right-corner {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.footer{
+  position: relative;
+}
+
+.footer ul{
+  position: absolute;
+  right: 5%;
+}
+
+.footer li{
+  color: rgb(120,120,120);
+  font-size: 26px;
+  padding: 10px 30px;
+}
+
+.footer li:hover{
+  color: #5FCF80;
+}
