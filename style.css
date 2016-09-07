@@ -5,15 +5,21 @@ body {
 }
 h1, h2, h3 {
   font-family: 'Raleway', sans-serif;
-  color: #3AC162;
+  color: #42BEFA;
 }
 a {
   color: rgb(180,180,180);
   text-decoration: none;
 }
 a:hover {
-  color: #3AC162;
+  color: #42BEFA;
   text-decoration: none;
+  transition: ease 5sec;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .box-white{
@@ -33,29 +39,30 @@ a:hover {
 .banner{
   background-image: url("images/banner.jpeg");
   background-size: cover;
-  padding: 200px 0;
+  padding: 135px 0;
   text-align: center;
 }
 .banner > h1, h2{
   text-shadow: 1px 1px 6px rgb(30,30,30);
 }
 .button-green{
-  background-color: #3AC162;
+  background-color: #42BEFA;
   padding: 10px;
   color: white;
   border-radius: 2px;
   border: none;
 }
 .button-green:hover{
-  background-color: #257a3d;
+  background-color: #2986b2;
   color: rgb(180,180,180);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-#contact-box {
-  position: relative;
-  width: 500px;
-  margin: auto;
-}
+
 
 .top-right-corner {
   position: absolute;
@@ -63,21 +70,62 @@ a:hover {
   right: 10px;
 }
 
-.footer{
+.img-rounded{
+  border-radius: 50%;
+  border: 1px solid rgb(150,150,150)
+}
+
+footer{
   position: relative;
 }
 
-.footer ul{
+footer ul{
   position: absolute;
   right: 5%;
 }
 
-.footer li{
+footer .list-inline >li{
   color: rgb(120,120,120);
   font-size: 26px;
-  padding: 10px 30px;
+  padding: 10px 20px;
 }
 
-.footer li:hover{
-  color: #5FCF80;
+footer li:hover{
+  color: #42BEFA;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+
+nav {
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  z-index: 1
+}
+
+nav li {
+  text-align: center;
+  text-shadow: 1px 1px 6px rgb(30,30,30);
+}
+
+
+nav li a {
+  text-decoration: none;
+  color: #ccc;
+  font: 25px/1 Raleway;
+
+}
+.cell-padded{
+  padding: 10%
+}
+.cell-padded img{
+  width: 80%
+}
+
+td>h3, td>p {
+  text-align: left
 }
