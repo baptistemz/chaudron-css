@@ -43,7 +43,7 @@ a:hover {
   text-align: center;
 }
 .banner > h1, h2{
-  text-shadow: 1px 1px 6px rgb(30,30,30);
+  text-shadow: 1px 1px 6px rgb(80,80,80);
 }
 .button-green{
   background-color: #42BEFA;
@@ -104,18 +104,18 @@ nav {
   position: fixed;
   top: 20px;
   width: 100%;
-  z-index: 1
+  z-index: 1;
 }
 
 nav li {
   text-align: center;
-  text-shadow: 1px 1px 6px rgb(30,30,30);
+  text-shadow: 1px 1px 6px rgb(80,80,80);
 }
 
 
 nav li a {
   text-decoration: none;
-  color: #ccc;
+  color: white;
   font: 25px/1 Raleway;
 
 }
