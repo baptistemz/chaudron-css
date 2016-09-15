@@ -1,3 +1,5 @@
+/*ELEMENTS HTML*/
+
 body {
   font-family: 'Open sans';
   color: rgb(30,30,30);
@@ -5,14 +7,14 @@ body {
 }
 h1, h2, h3 {
   font-family: 'Raleway', sans-serif;
-  color: #42BEFA;
+  color: #84c9ff;
 }
 a {
   color: rgb(180,180,180);
   text-decoration: none;
 }
 a:hover {
-  color: #42BEFA;
+  color: #84c9ff;
   text-decoration: none;
   transition: ease 5sec;
   -webkit-transition: all 0.5s ease;
@@ -22,11 +24,34 @@ a:hover {
   transition: all 0.5s ease;
 }
 
+/*UTILITIES*/
+
+.list-inline{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.list-inline li {
+    display: inline-block;
+}
+
+.top-right-corner {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/*COMPOSANTS*/
+
+/*boîtes*/
 .box-white{
   background-color: white;
-  padding: 30px;
+  padding: 10px;
   text-align: center;
-  margin: 30px ;
+  width: 60%;
+  margin: 30px 20%;
   border-radius: 5px;
   border: 1px solid rgb(220,220,220) ;
 }
@@ -36,6 +61,7 @@ a:hover {
   overflow: hidden
 }
 
+/*bannière*/
 .banner{
   background-image: url("images/banner.jpeg");
   background-size: cover;
@@ -43,18 +69,22 @@ a:hover {
   text-align: center;
 }
 .banner > h1, h2{
-  text-shadow: 1px 1px 6px rgb(80,80,80);
+  text-shadow: 1px 1px 3px rgb(80,80,80);
 }
-.button-green{
-  background-color: #42BEFA;
+
+/*boutons*/
+.button-blue{
+  margin: 20px;
+  background-color: #84c9ff;
   padding: 10px;
+  font-size:20px;
   color: white;
   border-radius: 2px;
   border: none;
 }
-.button-green:hover{
-  background-color: #2986b2;
-  color: rgb(180,180,180);
+.button-blue:hover{
+  background-color: #74b1e0;
+  color: rgb(230,230,230);
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -62,19 +92,14 @@ a:hover {
   transition: all 0.5s ease;
 }
 
-
-
-.top-right-corner {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
+/*avatar*/
 .img-rounded{
   border-radius: 50%;
   border: 1px solid rgb(150,150,150)
 }
 
+
+/*footer*/
 footer{
   position: relative;
 }
@@ -91,7 +116,10 @@ footer .list-inline >li{
 }
 
 footer li:hover{
-  color: #42BEFA;
+  color: #84c9ff;
+}
+
+footer li{
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -99,25 +127,31 @@ footer li:hover{
   transition: all 0.5s ease;
 }
 
+/*nav*/
 
 nav {
   position: fixed;
   top: 20px;
   width: 100%;
   z-index: 1;
+  text-align: center
 }
 
+
 nav li {
-  text-align: center;
-  text-shadow: 1px 1px 6px rgb(80,80,80);
+  width: 30%;
+  text-shadow: 1px 1px 3px rgb(80,80,80);
 }
 
 
 nav li a {
-  text-decoration: none;
   color: white;
   font: 25px/1 Raleway;
+}
 
+/*table*/
+table {
+  margin: auto
 }
 .cell-padded{
   padding: 10%
@@ -125,7 +159,6 @@ nav li a {
 .cell-padded img{
   width: 80%
 }
-
 td>h3, td>p {
   text-align: left
 }
